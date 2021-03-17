@@ -7,6 +7,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    input: {
+        backgroundColor: 'pink',
+        height: 40,
+        padding: 10,
+        borderRadius: 4
+    }
 });
 
 export default styles;
