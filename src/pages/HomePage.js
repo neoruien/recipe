@@ -8,16 +8,18 @@ import {
 } from 'react-native';
 import { recipes } from '../backend/data';
 
-function HomePage() {
+function HomePage(props) {
     return (
         <SafeAreaView>
             <View>
-                <Button
-                    title="Go to Read Recipe"
-                    onPress={() => props.navigation.navigate('Read Recipe')}
-                />
                 <ScrollView>
-                    {recipes.map((recipe, index) => <Text>{recipe.title}</Text>)}
+                    {recipes.map(recipe =>
+                        <Button
+                            title={recipe.title}
+                            key={recipe.id}
+                            onPress={() => props.navigation.navigate('Read Recipe', recipe)}
+                        />
+                    )}
                 </ScrollView>
             </View>
         </SafeAreaView>

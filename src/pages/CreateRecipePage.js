@@ -9,7 +9,7 @@ function CreateRecipePage() {
     return (
         <SafeAreaView>
             <View>
-                <Text>Create recipe page</Text>
+                <Text>Create recipe</Text>
             </View>
         </SafeAreaView>
     )

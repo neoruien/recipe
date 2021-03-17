@@ -5,11 +5,12 @@ import {
     Text
 } from 'react-native';
 
-function ReadRecipePage() {
+function ReadRecipePage({route, navigation}) {
+    const recipe = route.params;
     return (
         <SafeAreaView>
             <View>
-                <Text>Read recipe page</Text>
+                <Text>Title: {recipe.title}</Text>
             </View>
         </SafeAreaView>
     )

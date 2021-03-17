@@ -22,7 +22,7 @@ export default function App() {
   const HomeStack = () => {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomePage}/>
+        <Stack.Screen name="Recipes" component={HomePage}/>
         <Stack.Screen name="Read Recipe" component={ReadRecipePage}/>
       </Stack.Navigator>
     )
