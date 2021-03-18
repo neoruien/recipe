@@ -6,18 +6,18 @@ const Wrapper = styled.View`
 `
 
 const StyledInput = styled.TextInput`
-  border-color: ${props => (props.isError ? "red" : "gray")};
-  border-width: 1;
+  border-color: ${props => (props.isError ? 'red' : 'gray')};
+  border-width: 1px;
 `
 
 const Label = styled.Text`
-  color: "gray";
+  color: 'gray';
   font-size: 10px;
   letter-spacing: 2px;
 `
 
 const Error = styled.Text`
-  color: "red";
+  color: 'red';
 `
 
 const Input = ({ label, error }) => {

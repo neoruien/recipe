@@ -33,29 +33,29 @@ export default function App() {
         <Tabs.Screen
           name="Home"
           children={HomeStack}
-          options={{
-            tabBarIcon: ({color}) => (
-              <Icon icon={HomeIcon} color={color} size={25}/>
-            ),
-          }}
+          // options={{
+          //   tabBarIcon: ({color}) => (
+          //     <Icon icon={HomeIcon} color={color} size={25}/>
+          //   ),
+          // }}
         />
         <Tabs.Screen
           name="Create Recipe"
           component={CreateRecipePage}
-          options={{
-            tabBarIcon: ({color}) => (
-              <Icon icon={CreateIcon} color={color} size={25}/>
-            ),
-          }}
+          // options={{
+          //   tabBarIcon: ({color}) => (
+          //     <Icon icon={CreateIcon} color={color} size={25}/>
+          //   ),
+          // }}
         />
         <Tabs.Screen
           name = "Chef"
           component={ChefPage}
-          options={{
-            tabBarIcon: ({color}) => (
-              <Icon icon={ChefIcon} color={color} size={25}/>
-            ),
-          }}
+          // options={{
+          //   tabBarIcon: ({color}) => (
+          //     <Icon icon={ChefIcon} color={color} size={25}/>
+          //   ),
+          // }}
         />
       </Tabs.Navigator>
     </NavigationContainer>
