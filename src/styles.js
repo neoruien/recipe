@@ -55,7 +55,18 @@ const styles = StyleSheet.create({
         height: 40,
         padding: 10,
         borderRadius: 4
-    }
+    },
+    // checkbox
+    listItemStyle: {
+        borderBottomColor: '#eee',
+        borderBottomWidth: 1
+    },
+    // button
+    button: {
+        alignItems: "center",
+        backgroundColor: COLORS.GREY,
+        padding: 10
+    },
 });
 
 export default styles;

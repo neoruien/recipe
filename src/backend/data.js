@@ -1,6 +1,17 @@
 // Hardcode for the sake of simplicity
-const ingredients = [ 'Tomato', 'Cheese', 'Lettuce' ];
-const instructions = [ 'Cook', 'Bake', 'Fry'];
+// const ingredients = [ 'Tomato', 'Cheese', 'Lettuce' ];
+const ingredients = [
+  {id: 1, name: 'Tomato', quantity: '2pc', checked: false},
+  {id: 2, name: 'Chilli Flakes', quantity: '10g', checked: false},
+  {id: 3, name: 'Salt', quantity: '2tbsp', checked: false}
+];
+const instructions = [
+  {id: 1, name: 'Cook'},
+  {id: 2, name: 'Bake'},
+  {id: 3, name: 'Fry'}
+];
+
+export const finishedCookingCount = 0;
 
 export const recipes = [
   {
