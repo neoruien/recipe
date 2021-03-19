@@ -43,18 +43,31 @@ const styles = StyleSheet.create({
         fontWeight: 'normal',
         color: COLORS.GREY
     },
+    //form
+    form: {
+        width: '100%',
+        height: 'auto',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 5,
+        marginTop: 5
+    },
+    input: {
+        width: 350,
+        height: 40,
+        padding: 5,
+        margin: 5,
+        borderWidth: 1,
+        borderColor: 'grey',
+        borderStyle: 'solid',
+        borderRadius: 3
+    },
     // image
     image: {
         borderRadius: 10,
         resizeMode: 'cover',
         width: "100%",
         height: hp('20%')
-    },
-    input: {
-        backgroundColor: 'pink',
-        height: 40,
-        padding: 10,
-        borderRadius: 4
     },
     // checkbox
     listItemStyle: {
@@ -67,6 +80,11 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.GREY,
         padding: 10
     },
+    // picker
+    picker: {
+        height: 50,
+        width: 150
+    }
 });
 
 export default styles;

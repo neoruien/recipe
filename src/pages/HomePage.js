@@ -14,27 +14,25 @@ import { recipes } from '../backend/data';
 function HomePage(props) {
     return (
         <SafeAreaView>
-            <View>
-                <ScrollView>
-                    {recipes.map(recipe =>
-                        <TouchableOpacity
-                            key={recipe.id}
-                            onPress={() => props.navigation.navigate('Read Recipe', recipe)}
-                        >
-                            <Image source={{uri: recipe.image}} style={styles.image}/>
-                            <View style={styles.whiteContainer}>
-                                <Text style={styles.recipeSubtitle}>{recipe.type}</Text>
-                                <Text style={styles.recipeTitle}>{recipe.title}</Text>
-                                <View style={{justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row', flex: 1}}>
-                                    <Text style={styles.recipeSubtitle}>{recipe.duration}</Text>
-                                    <Text style={styles.recipeSubtitle}>{recipe.difficulty}</Text>
-                                    <Text style={styles.recipeSubtitle}>{recipe.quantity} people</Text>
-                                </View>
+            <ScrollView>
+                {recipes.map(recipe =>
+                    <TouchableOpacity
+                        key={recipe.id}
+                        onPress={() => props.navigation.navigate('Read Recipe', recipe)}
+                    >
+                        <Image source={{uri: recipe.image}} style={styles.image}/>
+                        <View style={styles.whiteContainer}>
+                            <Text style={styles.recipeSubtitle}>{recipe.type}</Text>
+                            <Text style={styles.recipeTitle}>{recipe.title}</Text>
+                            <View style={{justifyContent: 'space-around', alignItems: 'center', flexDirection: 'row', flex: 1}}>
+                                <Text style={styles.recipeSubtitle}>{recipe.duration}</Text>
+                                <Text style={styles.recipeSubtitle}>{recipe.difficulty}</Text>
+                                <Text style={styles.recipeSubtitle}>{recipe.quantity} people</Text>
                             </View>
-                        </TouchableOpacity>
-                    )}
-                </ScrollView>
-            </View>
+                        </View>
+                    </TouchableOpacity>
+                )}
+            </ScrollView>
         </SafeAreaView>
     )
 }
