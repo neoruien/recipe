@@ -1,9 +1,9 @@
 // Hardcode for the sake of simplicity
 // const ingredients = [ 'Tomato', 'Cheese', 'Lettuce' ];
 const ingredients = [
-  {id: 1, name: 'Tomato', quantity: '2pc', checked: false},
-  {id: 2, name: 'Chilli Flakes', quantity: '10g', checked: false},
-  {id: 3, name: 'Salt', quantity: '2tbsp', checked: false}
+  {id: 1, name: 'Tomato', quantity: '2pc'},
+  {id: 2, name: 'Chilli Flakes', quantity: '10g'},
+  {id: 3, name: 'Salt', quantity: '2tbsp'}
 ];
 const instructions = [
   {id: 1, name: 'Cook'},
